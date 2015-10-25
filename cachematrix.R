@@ -29,7 +29,6 @@ cacheSolve <- function(x, ...) {
     i <- x$getinverse()
     if(!is.null(i)) {
         # the inverse is cached, return it
-        message("cache hit!")
         return(i);
     }
     # compute the inverse
